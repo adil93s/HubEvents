@@ -1,0 +1,346 @@
+body {
+  background: rgb(22, 22, 22);
+  color: white;
+}
+
+.nav a {
+  color: rgb(207, 207, 207);
+}
+
+.nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.footer h1,
+.footer h2 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(168, 168, 168);
+  font-size: 15px;
+}
+
+.footer h2 {
+  color: #ffffff;
+}
+
+.footer a {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.container-event {
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.header .hamburger-lines .line {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    margin-top: 5%;
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .event-detail {
+    margin-top: 300px !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-detail div {
+    margin-right: 40px;
+  }
+
+  .event-detail div:first-child {
+    margin-left: -50px;
+  }
+
+  .event-content {
+    margin-top: 10px !important;
+  }
+
+  .event-main {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .event-content .description {
+    margin-top: 80px;
+    width: 90% !important;
+    text-align: center;
+  }
+
+  .event-content .informations {
+    padding-right: 0 !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 880px) {
+  .background-image {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .background-image {
+    width: 80%;
+    height: 450px;
+  }
+}
+
+.background-image .shadow-img {
+  position: absolute;
+  background: radial-gradient(
+    circle,
+    transparent,
+    rgba(22, 22, 22, 0.98) 80%,
+    rgb(22, 22, 22) 100%
+  );
+  box-shadow: inset 0 0 40px rgb(22, 22, 22);
+  height: 100%;
+  width: 100%;
+}
+
+.background-image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.event-detail {
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 10%;
+}
+
+.event-detail div {
+  margin-bottom: 20px;
+}
+
+.event-detail h6 {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.event-detail span {
+  font-size: 13px;
+  color: rgba(172, 172, 172, 0.5);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.event-content {
+  margin-top: 150px;
+}
+
+.event-content .title {
+  display: flex;
+  top: 0;
+  left: 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-content .title h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.event-main .informations {
+  padding-right: 100px;
+}
+
+.event-content .informations h6 {
+  text-transform: capitalize;
+  display: inline-block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-weight: 500;
+}
+
+.event-content .informations span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+.event-content .informations a {
+  text-decoration: none !important;
+}
+
+.event-content .description {
+  width: 40%;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.event-start {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.event-start h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.event-start a {
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+.button-container {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4),
+    0 0 10px rgba(255, 255, 255, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-signaler {
+  margin-top: 100px;
+}
+.button-container-signaler button {
+  background-color: rgba(194, 194, 194, 0.665);
+  border-radius: 8px;
+  border-width: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-container-signaler button:hover,
+.button-container-signaler button:focus,
+.button-container-signaler button:visited {
+  background-color: rgba(255, 0, 0, 0.642);
+  color: #171717;
+}
+.button-container button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(29) forwards;
+  animation: ani2 0.7s steps(29) forwards;
+}
+.button-container button:hover {
+  -webkit-animation: ani 0.7s steps(29) forwards;
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.button-container:hover {
+  box-shadow: none;
+}
+
+.mas {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 14px;
+  margin-top: 20px;
+  overflow: hidden;
+  font-weight: bold;
+}
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
