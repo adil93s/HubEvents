@@ -156,7 +156,7 @@
             foreach($event as $a) {
                 ?>
                 <div class="user_edit">
-                <img src="img/evenements/<?php echo htmlspecialchars($a["image"]); ?>">
+                <img src="img/Evenements/<?php echo htmlspecialchars($a["image"]); ?>">
                     <a href="index.php?module=mod_admin&id=<?php echo $a["id"]; ?>"></a><br>
                     <p> Evènement : <?php echo htmlspecialchars($a['name']); ?></p>
                     <a href="index.php?module=mod_admin&action=modifE&id=<?php echo $a["id"]; ?>">Modifier</a>

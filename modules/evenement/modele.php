@@ -42,6 +42,7 @@
                     if($_SESSION['token_time'] >= $timestamp_ancien) {
                         $signaler= parent::$bdd->prepare("INSERT INTO Signalement (raison, idEvent, idUser) VALUES(?,?,?)");
                         $signaler->execute(array($_POST["raison"],$_GET["id"],$_SESSION["connexion"]));
+                        header('Location: index.php?module=mod_evenement&id='.$_GET["id"].'');
                     }
                 }
             }   

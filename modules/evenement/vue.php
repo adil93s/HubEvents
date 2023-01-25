@@ -160,7 +160,7 @@
             <div class="sign-form">
                 <form action="index.php?module=mod_evenement&action=signaler&id=<?php echo $event["id"]; ?>" method="POST">
                     <label class="main__input-label">Quel est la raison de votre signalement ?</label>
-                    <textarea class="main__input description" name="description" id="description" type="text" required="required" minlength="4" maxlength="500"></textarea>
+                    <textarea class="main__input description" name="raison" id="description" type="text" required="required" minlength="4" maxlength="500"></textarea>
                     <div>
                     <button type="submit"  class="btn btn-follow">Envoyer</button>
                     </div>
